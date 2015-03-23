@@ -6,6 +6,9 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
+;; give me more room
+(toggle-scroll-bar -1)
+
 ;; go away
 (setq inhibit-splash-screen t)
 
@@ -16,4 +19,4 @@
 (package-initialize)
 
 ;; make it pretty
-(load-theme 'obsidian)
+(load-theme 'spacegray)
