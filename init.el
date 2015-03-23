@@ -5,8 +5,6 @@
 ;; make some room
 (menu-bar-mode -1)
 (tool-bar-mode -1)
-
-;; give me more room
 (toggle-scroll-bar -1)
 
 ;; go away
