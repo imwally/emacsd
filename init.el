@@ -1,6 +1,8 @@
-;; load custom stuff
+;; load stuff
 (setq custom-file "~/.emacs.d/custom.el")
+(setq packages "~/.emacs.d/packages.el")
 (load custom-file)
+(load packages)
 
 ;; make some room
 (menu-bar-mode -1)
@@ -9,12 +11,6 @@
 
 ;; go away
 (setq inhibit-splash-screen t)
-
-;; packages
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")
-                         ("melpa" . "http://melpa.milkbox.net/packages/")))
-(package-initialize)
 
 ;; make it pretty
 (load-theme 'spacegray)
