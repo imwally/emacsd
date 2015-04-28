@@ -15,6 +15,14 @@
 ;; make it pretty
 (load-theme 'spacegray)
 
+;; programs
+(add-to-list 'exec-path "/usr/local/bin")
+
+;;; Common Lisp
+(require 'slime)
+(setq inferior-lisp-program "sbcl")
+(slime-setup)
+
 ;; date and timestamp courtesy of kyle
 (defun k-insert-timestamp ()
   (interactive)
