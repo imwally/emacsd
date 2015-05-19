@@ -13,7 +13,7 @@
 (setq inhibit-splash-screen t)
 
 ;; make it pretty
-(load-theme 'spacegray)
+;;(load-theme 'spacegray)
 
 ;; programs
 (add-to-list 'exec-path "/usr/local/bin")
