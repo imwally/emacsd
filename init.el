@@ -13,6 +13,9 @@
 (setq inhibit-splash-screen t)
 (setq initial-scratch-message "")
 
+;; smaller font
+(set-face-attribute 'default nil :height 80)
+
 ;; make it pretty
 ;;(load-theme 'spacegray)
 
