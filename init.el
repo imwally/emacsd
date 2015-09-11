@@ -13,14 +13,14 @@
 (setq inhibit-splash-screen t)
 (setq initial-scratch-message "")
 
-;; smaller font
-(set-face-attribute 'default nil :height 80)
-
 ;; make it pretty
 ;;(load-theme 'spacegray)
 
 ;; programs
 (add-to-list 'exec-path "/usr/local/bin")
+
+;; magit
+(global-set-key (kbd "C-x g") 'magit-status)
 
 ;;; Common Lisp
 (require 'slime)
