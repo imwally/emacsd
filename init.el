@@ -14,10 +14,11 @@
 (setq initial-scratch-message "")
 
 ;; make it pretty
-;;(load-theme 'spacegray)
+(load-theme 'flatui)
 
 ;; programs
 (add-to-list 'exec-path "/usr/local/bin")
+(add-to-list 'exec-path "/usr/local/go/bin")
 
 ;; magit
 (global-set-key (kbd "C-x g") 'magit-status)
