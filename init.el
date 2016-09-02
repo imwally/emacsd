@@ -14,7 +14,7 @@
 (setq initial-scratch-message "")
 
 ;; make it pretty
-(load-theme 'flatui)
+(load-theme 'tao-yang)
 
 ;; programs
 (add-to-list 'exec-path "/usr/local/bin")
@@ -22,6 +22,10 @@
 
 ;; magit
 (global-set-key (kbd "C-x g") 'magit-status)
+
+;; scpaste
+(setq scpaste-http-destination "https://imwally.net/p"
+      scpaste-scp-destination "imwally.net:~/containers/imwally.net/volume/p")
 
 ;;; Common Lisp
 (require 'slime)
