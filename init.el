@@ -24,6 +24,16 @@
 (load-theme 'sanityinc-tomorrow-day)
 (set-face-attribute 'default nil :font "SF Mono-12")
 
+;; backups location
+(setq
+ backup-by-copying t
+ backup-directory-alist
+ '(("." . "~/.emacs-backup-files"))
+ delete-old-versions t
+ kept-new-versions 6
+ kept-old-versions 2
+ version-control t)
+
 ;; programs
 (add-to-list 'exec-path "/usr/local/bin")
 (add-to-list 'exec-path "/usr/local/go/bin")
