@@ -4,16 +4,15 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-;; load stuff
+;; custom stuff
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
-(setq packages "~/.emacs.d/packages.el")
-(load packages)
 
 ;; define my configs
 (setq my-configs '("backups.el"
 		   "cl.el"
 		   "magit.el"
+		   "packages"
 		   "scp-paste.el"
 		   "util.el"
 		   "visual.el"
