@@ -6,63 +6,26 @@
 
 ;; load stuff
 (setq custom-file "~/.emacs.d/custom.el")
-(setq packages "~/.emacs.d/packages.el")
 (load custom-file)
+(setq packages "~/.emacs.d/packages.el")
 (load packages)
 
-;; make some room
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(toggle-scroll-bar -1)
+;; define my configs
+(setq my-configs '("backups.el"
+		   "cl.el"
+		   "magit.el"
+		   "scp-paste.el"
+		   "util.el"
+		   "visual.el"
+		   "web-mode.el"))
 
-;; go away
-(setq inhibit-splash-screen t)
-(setq initial-scratch-message "")
-
-;; make it pretty
-(load-theme 'sanityinc-tomorrow-day)
-(set-face-attribute 'default nil :font "SF Mono-12")
-
-;; backups location
-(setq
- backup-by-copying t
- backup-directory-alist
- '(("." . "~/.emacs-backup-files"))
- delete-old-versions t
- kept-new-versions 6
- kept-old-versions 2
- version-control t)
+;; load my configs
+(mapcar #'load
+	(mapcar (lambda (el)
+		  (concat "~/.emacs.d/lib/" el))
+		my-configs))
 
 ;; programs
 (add-to-list 'exec-path "/usr/local/bin")
 (add-to-list 'exec-path "/usr/local/go/bin")
 
-;; magit
-(global-set-key (kbd "C-x g") 'magit-status)
-
-;; scpaste
-(setq scpaste-http-destination "https://imwally.net/p"
-      scpaste-scp-destination "imwally.net:~/containers/imwally.net/volume/p")
-
-;;; Common Lisp
-(require 'slime)
-(setq inferior-lisp-program "sbcl")
-(slime-setup)
-
-;; web-mode
-(defun my-web-mode-hook ()
-  "Hooks for Web mode."
-  (setq web-mode-markup-indent-offset 2))
-(add-hook 'web-mode-hook 'my-web-mode-hook)
-
-;; date and timestamp courtesy of kyle
-(defun k-insert-timestamp ()
-  (interactive)
-  (insert (format-time-string "%Y-%m-%dT%H:%M:%S%z")))
-
-(defun k-insert-date ()
-  (interactive)
-  (insert (format-time-string "%Y-%m-%d")))
-
-(global-set-key (kbd "C-c t t") 'k-insert-timestamp)
-(global-set-key (kbd "C-c t d") 'k-insert-date)
