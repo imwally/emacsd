@@ -8,5 +8,5 @@
 (setq initial-scratch-message "")
 
 ;; make it pretty
-(load-theme 'sanityinc-tomorrow-day)
+(load-theme 'tao-yang)
 (set-face-attribute 'default nil :font "SF Mono-12")
