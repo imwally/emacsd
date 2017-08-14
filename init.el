@@ -11,6 +11,7 @@
 ;; define my configs
 (setq my-configs '("backups.el"
 		   "cl.el"
+		   "go.el"
 		   "magit.el"
 		   "packages"
 		   "scp-paste.el"
@@ -27,3 +28,4 @@
 ;; programs
 (add-to-list 'exec-path "/usr/local/bin")
 (add-to-list 'exec-path "/usr/local/go/bin")
+(add-to-list 'exec-path "~/Code/go/bin")
