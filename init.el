@@ -25,7 +25,6 @@
 		  (concat "~/.emacs.d/lib/" el))
 		my-configs))
 
-;; programs
-(add-to-list 'exec-path "/usr/local/bin")
-(add-to-list 'exec-path "/usr/local/go/bin")
-(add-to-list 'exec-path "~/Code/go/bin")
+;; set PATH
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
