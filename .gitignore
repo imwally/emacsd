@@ -1,3 +1,5 @@
 elpa/
 eshell/
 \#*
+custom.el
+ac-comphist.dat
