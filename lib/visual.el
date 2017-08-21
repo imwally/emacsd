@@ -10,3 +10,4 @@
 ;; make it pretty
 (load-theme 'tao-yang)
 (set-face-attribute 'default nil :font "SF Mono-12")
+(set-background-color "white")
