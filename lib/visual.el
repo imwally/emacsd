@@ -7,6 +7,10 @@
 (setq inhibit-splash-screen t)
 (setq initial-scratch-message "")
 
+;; not so tiny
+(set-frame-height (selected-frame) 60)
+(set-frame-width (selected-frame) 100)
+
 ;; make it pretty
 (load-theme 'tao-yang)
 (set-face-attribute 'default nil :font "SF Mono-12")
