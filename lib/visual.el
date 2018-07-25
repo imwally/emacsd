@@ -12,6 +12,6 @@
 (set-frame-width (selected-frame) 100)
 
 ;; make it pretty
-(load-theme 'tao-yang)
+(load-theme 'tao-yang t)
 (set-face-attribute 'default nil :font "SF Mono-12")
 (set-background-color "white")
