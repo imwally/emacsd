@@ -9,7 +9,7 @@
 
 ;; not so tiny
 (set-frame-height (selected-frame) 71)
-(set-frame-width (selected-frame) 100)
+(set-frame-width (selected-frame) 118)
 
 ;; make it pretty
 (load-theme 'tao-yang t)
