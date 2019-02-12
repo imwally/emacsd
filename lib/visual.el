@@ -8,10 +8,9 @@
 (setq initial-scratch-message "")
 
 ;; not so tiny
-(set-frame-height (selected-frame) 71)
-(set-frame-width (selected-frame) 118)
+(set-frame-size (selected-frame) 100 60)
 
 ;; make it pretty
-(load-theme 'tao-yang t)
-(set-face-attribute 'default nil :font "SF Mono-12")
+;;(load-theme 'tao-yang t)
+(set-face-attribute 'default nil :font "SF Mono-11")
 (set-background-color "white")
