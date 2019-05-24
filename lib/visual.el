@@ -13,4 +13,4 @@
 (set-background-color "white")
 
 ;; not so tiny
-(set-frame-size (selected-frame) 100 65)
+(set-frame-size (selected-frame) 117 77)
