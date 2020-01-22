@@ -7,6 +7,9 @@
 (setq inhibit-splash-screen t)
 (setq initial-scratch-message "")
 
+;; don't wrap lines by default
+(set-default 'truncate-lines t)
+
 ;; make it pretty
 ;;(load-theme 'tao-yang t)
 (set-face-attribute 'default nil :font "SF Mono-11")
