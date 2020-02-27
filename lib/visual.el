@@ -11,7 +11,7 @@
 (set-default 'truncate-lines t)
 
 ;; make it pretty
-;;(load-theme 'tao-yang t)
+(load-theme 'monotropic t)
 (set-face-attribute 'default nil :font "SF Mono-11")
 (set-background-color "white")
 
