@@ -19,6 +19,6 @@
   (setq company-minimum-prefix-length 1))
 
 (use-package company-lsp
-     :ensure t
-     :commands company-lsp)
+  :ensure t
+  :commands company-lsp)
 	
