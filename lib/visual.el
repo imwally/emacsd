@@ -13,7 +13,6 @@
 ;; make it pretty
 (load-theme 'monotropic t)
 (set-face-attribute 'default nil :font "SF Mono-11")
-(set-background-color "white")
 
 ;; not so tiny
 (set-frame-size (selected-frame) 101 70)
