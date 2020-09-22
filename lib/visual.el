@@ -18,4 +18,4 @@
 (set-face-attribute 'default nil :font "SF Mono-11")
 
 ;; not so tiny
-(set-frame-size (selected-frame) 101 70)
+(set-frame-size (selected-frame) 140 79)
